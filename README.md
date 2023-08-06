@@ -4,6 +4,7 @@ It does this through creating a mock internal representation of a java agent.
 I hacked this together within a few hours so please feel free to contribute, and star if this helped you.
 
 Some code from OpenJDK is integrated throughout the project, such as the JPLIS structures.
+Find the OpenJDK jdk here: https://github.com/openjdk/jdk
 
 # How do I use this?
 
