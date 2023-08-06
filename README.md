@@ -4,3 +4,12 @@ It does this through creating a mock internal representation of a java agent.
 I hacked this together within a few hours so please feel free to contribute, and star if this helped you.
 
 Some code from OpenJDK is integrated throughout the project, such as the JPLIS structures.
+
+# How do I use this?
+
+Compile the DLL in the dll directory (you have to use the /includes folder from a JDK to compile it)
+Then create a class called InstrumentationManager with a method getInstrumentation:
+
+![image](https://github.com/roger1337/Agentless-Instrumentation-with-JNI/assets/85001442/e3c138cd-e40c-4c89-9266-9bda18ddb053)
+
+
