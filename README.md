@@ -9,8 +9,12 @@ Find the OpenJDK jdk here: https://github.com/openjdk/jdk
 # How do I use this?
 
 Compile the DLL in the dll directory (you have to use the /includes folder from a JDK to compile it)
-Then create a class called InstrumentationManager with a method getInstrumentation:
+Then create a class called InstrumentationManager with a native method getInstrumentation:
 
 ![image](https://github.com/roger1337/Agentless-Instrumentation-with-JNI/assets/85001442/e3c138cd-e40c-4c89-9266-9bda18ddb053)
+
+This code has been tested on Java 1.8 only with the tests in the tests folder.
+
+
 
 
