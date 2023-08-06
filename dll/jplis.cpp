@@ -9,7 +9,7 @@ JPLISAgent* allocateJPLISAgent(jvmtiEnv* jvmtienv) {
 }
 
 void* allocate(jvmtiEnv* jvmtienv, size_t bytecount) {
-    void* resultBuffer = NULL;
+    void* resultBuffer { NULL };
 
     if (jvmtienv->Allocate(bytecount, (unsigned char**)&resultBuffer) != JVMTI_ERROR_NONE) {
         std::cout << "Failed to allocate" << std::endl;
@@ -20,7 +20,7 @@ void* allocate(jvmtiEnv* jvmtienv, size_t bytecount) {
 
 
 JPLISAgent* getDummyAgent(JavaVM* vm, jvmtiEnv* jvmtienv) {
-    JPLISAgent* agent = allocateJPLISAgent(jvmtienv);
+    JPLISAgent* agent{ allocateJPLISAgent(jvmtienv) };
 
     agent->mJVM                                      = vm;
     agent->mNormalEnvironment.mJVMTIEnv              = jvmtienv;
